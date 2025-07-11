@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title> Table Calculation </title>
+    </head>
+
+    <body>
+        <!-- First Table -->
+        <div class="container">
+            <p> Table 1 - Calculations</p>
+            <table id="firstTable">
+                <tr>
+                    <th>Category</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Alpha</td>
+                    <td>A5 + A20</td>
+                </tr>
+                <tr>
+                    <td>Beta</td>
+                    <td>A15 / A7</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>A13 * A12</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!-- Second Table -->
+        <div class="container">
+
+            <p> Table 2 - Results</p>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Alpha</td>
+                    <td id="alphaResult"></td>
+                </tr>
+                <tr>
+                    <td>Beta</td>
+                    <td id="betaResult"></td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td id="charlieResult"></td>
+                </tr>
+            </table>
+            <br>
+            <!-- Import CSV -->
+            <input 
+                type="file" 
+                class="importCSV"
+                id="csvFile" 
+                accept=".csv"
+            />
+
+        </div>
+    </body>
+    <footer>
+        <p> Developed by Goh Guang Wei</p>
+    </footer>
+</html>
