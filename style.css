@@ -68,3 +68,8 @@ td {
   border: none;
   border-bottom: 1px solid black;
 }
+
+/* Remove border of last row of table */
+tr:last-child td {
+  border: none;
+}
